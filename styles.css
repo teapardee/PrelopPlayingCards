@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap');
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-size: 62.5%;
+  letter-spacing: 2px;
+  font-family: 'Montserrat', sans-serif;
+  color: rgba(0, 0, 0, 0.75);
+  --box-shadow-main: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  --box-shadow-secondary: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  --secondary-color: #2c323d;
+  --color-three: lightblue;
+}
+
+button {
+  all: unset;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: grey;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 336px;
+  width: 240px;
+  background-color: white;
+  border-radius: 15px;
+}
+
+.safe-area {
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  width: 204px;
+}
+
+.grid {
+  display: grid;
+  height: 204px;
+  width: 204px;
+  grid-template: repeat(13, 1fr) / repeat(13, 1fr);
+  gap: 1px;
+}
+
+.tile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(135, 206, 250);
+  color: white;
+  letter-spacing: 0px;
+}
+
+.title {
+  display: inline-block;
+  line-height: 3rem;
+  width: fit-content;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.sub-title-wrapper {
+  display: flex;
+  width: 100%;
+  font-size: 2rem;
+  margin-bottom: 0.25rem;
+}
+
+.sub-tile {
+  display: flex;
+}
+
+.sub-title:last-child {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+}
